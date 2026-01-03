@@ -16,7 +16,7 @@ const SingleProduct = () => {
 
   const getSingleProduct = async () => {
     try {
-      const res = await axios.get(`${apiUrl}${params.id}`);
+      const res = await axios.get(`${apiUrl}products/id/${params.id}`);
       const product = res.data;
       setSingleProduct(product);
       console.log(product);

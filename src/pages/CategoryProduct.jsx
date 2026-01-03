@@ -14,7 +14,7 @@ const CategoryProduct = () => {
 
   const getFilterData = async () => {
     try {
-      const res = await axios.get(`${apiUrl}${category}`);
+      const res = await axios.get(`${apiUrl}products/category/${category}`);
       console.log(res.data);
       const data = res.data;
       setSearchData(data);

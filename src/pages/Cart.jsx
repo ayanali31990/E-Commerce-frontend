@@ -204,7 +204,7 @@ const Cart = ({ location, getLocation }) => {
                 </div>
                 <button
                   onClick={() => {
-                    toast.success("Order is places");
+                    toast.success("Order is place");
                     navigate("/");
                     setCartItem([]);
                   }}

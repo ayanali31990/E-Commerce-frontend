@@ -36,8 +36,9 @@ const Navbar = ({ location, getLocation, openDropdown, setOpenDropdown }) => {
             <span className="font-semibold ">
               {location ? (
                 <div className="-space-y-2">
-                  <p>{location.county}</p>
-                  <p>{location.state}</p>
+                  <p>{location.countryName}</p>
+                  <p>{location.city}</p>
+                  <p>{location.locality}</p>
                 </div>
               ) : (
                 "Add Address"

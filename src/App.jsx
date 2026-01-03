@@ -15,7 +15,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   const [location, setLocation] = useState();
-  const [openDropDown, setOpenDropDown] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(false);
   const { cartItem, setCartItem } = useCart();
 
   //Location function for getting location
@@ -36,7 +36,7 @@ function App() {
         );
         const exactLoaction = res.data;
         setLocation(exactLoaction);
-        setOpenDropDown(false);
+        setOpenDropdown(false);
         console.log(exactLoaction);
       } catch (err) {
         console.log(err);
@@ -66,8 +66,8 @@ function App() {
       <NavBar
         location={location}
         getLocation={getLocation}
-        openDropDown={openDropDown}
-        setOpenDropDown={setOpenDropDown}
+        openDropdown={openDropdown}
+        setOpenDropdown={setOpenDropdown}
       />
       <Routes>
         <Route path="/" element={<Home />}></Route>
